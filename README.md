@@ -1,4 +1,4 @@
-#  This repo containt an example how to move Terraform random_pet resource
+#  This repo containt an example how to move Terraform Resource Into a Module.
 
 - clone the repo
 ```
@@ -25,7 +25,7 @@ resource "null_resource" "hello" {
 ```
 - Rename the resource:
 ```
-$ terraform state mv random_pet.name module.main.random_pet.name
+$ terraform state mv random_pet.name module.main
 ```
 - Initialise the provider and apply again.
 ```
