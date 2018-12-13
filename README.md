@@ -7,8 +7,8 @@ cd move-state-module
 ```
 - Initialise the provider and apply
 ```
-terraform init
-terraform apply
+$ terraform init
+$ terraform apply
 ```
   - Update code to use the module with following:
 ```
@@ -25,12 +25,12 @@ resource "null_resource" "hello" {
 ```
 - Rename the resource:
 ```
-terraform state mv random_pet.name module.main.random_pet.name
+$ terraform state mv random_pet.name module.main.random_pet.name
 ```
 - Initialise the provider and apply again.
 ```
-terraform init
-terraform apply
+$ terraform init
+$ terraform apply
 ```
 - There should not be changes - the result should be similar to following:
 ```
