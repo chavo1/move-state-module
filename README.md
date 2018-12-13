@@ -15,6 +15,7 @@
   module "main" {
 source = "./random_pet"
 }
+
 resource "null_resource" "hello" {
 provisioner "local-exec" {
 command = "echo Hello ${module.main.pet_module}"
