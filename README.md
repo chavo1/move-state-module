@@ -32,7 +32,7 @@ terraform state mv random_pet.name module.main.random_pet.name
 terraform init
 terraform apply
 ```
-- There should not be changes the result should be similar to following:
+- There should not be changes - the result should be similar to following:
 ```
 $ terraform apply
 random_pet.name: Refreshing state... (ID: externally-gladly-noted-cockatoo)
