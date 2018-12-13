@@ -1,26 +1,27 @@
 #  This repo containt an example how to move Terraform random_pet resource
 
 - clone the repo
-  ```
-  git clone https://github.com/chavo1/move-state-module.git
-  cd move-state-module
-  ```
-  - Initialise the provider and apply
-  ```
-  terraform init
-  terraform apply
-  ```
+```
+git clone https://github.com/chavo1/move-state-module.git
+cd move-state-module
+```
+- Initialise the provider and apply
+```
+terraform init
+terraform apply
+```
   - Update code to use the module with following:
-  ```
-  module "main" {
-source = "./random_pet"
+```
+module "main" {
+  source = "./random_pet"
 }
 
 resource "null_resource" "hello" {
-provisioner "local-exec" {
-command = "echo Hello ${module.main.pet_module}"
+  provisioner "local-exec" {
+    command = "echo Hello ${module.main.pet_module}"
+  }
 }
-}
+
 ```
 - Rename the resource:
 ```
