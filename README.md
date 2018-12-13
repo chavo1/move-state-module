@@ -1,5 +1,7 @@
 #  This repo containt an example how to move Terraform Resource Into a Module.
 
+- More info could be found [HERE](https://www.terraform.io/docs/commands/state/mv.html#example-move-a-resource-into-a-module)
+
 - clone the repo
 ```
 git clone https://github.com/chavo1/move-state-module.git
